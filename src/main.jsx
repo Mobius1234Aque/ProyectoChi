@@ -94,7 +94,13 @@ const router = createBrowserRouter([
 
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'))
+    React.useEffect(() => {
+        var _mtm = window._mtm = window._mtm || [];
+        _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://cdn.matomo.cloud/prototipopsivercelapp.matomo.cloud/container_AKhP5Gc7.js'; s.parentNode.insertBefore(g,s);
+    }, [])
 root.render(
     <>
         <RouterProvider router={router}>

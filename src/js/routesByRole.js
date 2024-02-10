@@ -1,12 +1,9 @@
 // routesByRole.js
 export const routesByRole = {
     "guest": [
-      { name: "Inicio", path: "/" },
       { name: "Registro", path: "/Registro" },
-      { name: "Inicio de sesión", path: "/Login" },
-      { name: "¿Quiénes somos?", path: "/Quien" },
-      { name: "Preguntas", path: "/Preguntas" },
-      { name: "Mapa", path: "/Mapa" },
+      { name: "Login", path: "/Login" },
+
     ],
     "1": [
       { name: "Inicio", path: "/" },

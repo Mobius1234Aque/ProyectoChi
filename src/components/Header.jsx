@@ -10,7 +10,8 @@ import { routesByRole } from "../js/routesByRole";
 import Bradcum from "./breadCrumber";
 
 export function Header() {
-  const userRole = localStorage.getItem("userRole");
+  // En tu componente Header
+  const userRole = localStorage.getItem("userRole") || "guest";
   const filteredNavigation = routesByRole[userRole] || [];
   return (
     <>

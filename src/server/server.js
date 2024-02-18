@@ -12,9 +12,9 @@ app.use(express.json());
 // Configuración de la conexión a la base de datos
 const pool = mysql.createPool({
   host: 'localhost',
-  user: 'root',
-  password: '', 
-  database: 'zona012',
+  user: 'eduzonac_admin',
+  password: 'WSpi)j0M&FH9', 
+  database: 'eduzonac_zona012',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
@@ -274,7 +274,6 @@ app.get('/obtener-pregunta/:curp', async (req, res) => {
     
     const query = 'SELECT pregunta FROM registro WHERE curp = ?';
     const [results] = await connection.execute(query, [curp]);
-
     connection.release();
 
     if (results.length > 0) {
@@ -386,7 +385,7 @@ app.post('/actualizar-contrasena', async (req, res) => {
   
 
 // Iniciar el servidor
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3306;
 app.listen(PORT, () => {
   console.log(`Servidor en ejecución en el puerto ${PORT}`);
 });

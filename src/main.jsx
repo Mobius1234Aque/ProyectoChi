@@ -25,6 +25,7 @@ import { ReContraseña } from "./views/ReContraseña";
 import { Re2Contraseña } from "./views/Re2Contraseña";
 import { Registro } from "./views/Registro";
 import { Mapa } from "./views/Mapa";
+import { Logout } from "./components/Logout";
 
 // Componente ScrollToTop
 const ScrollToTop = () => {
@@ -109,6 +110,10 @@ const router = createBrowserRouter([
   {
     path: "/Mapa",
     element: <Mapa />,
+  },
+  {
+    path: "/Logout",
+    element: <Logout />,
   },
 ]);
 

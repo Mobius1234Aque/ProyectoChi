@@ -83,6 +83,7 @@ export const routesByRole = {
         ],
       },
       { name: "¿Quiénes somos?", path: "/Quien" },
+      { name:"salir", path:"/Logout"}
     ],
   };
   

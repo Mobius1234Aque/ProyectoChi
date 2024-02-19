@@ -12,9 +12,9 @@ app.use(express.json());
 // Configuración de la conexión a la base de datos
 const pool = mysql.createPool({
   host: 'localhost',
-  user: 'eduzonac_admin',
-  password: 'WSpi)j0M&FH9', 
-  database: 'eduzonac_zona012',
+  user: 'root',
+  password: '',
+  database: 'zona012',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
@@ -385,7 +385,7 @@ app.post('/actualizar-contrasena', async (req, res) => {
   
 
 // Iniciar el servidor
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor en ejecución en el puerto ${PORT}`);
 });

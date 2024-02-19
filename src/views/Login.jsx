@@ -7,7 +7,7 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { Link } from "react-router-dom";
 import { ScrollToTop } from "../components/ScrollToTop";
-import { Form, Input, Button, Select, message } from "antd";
+import { Form, Input, Button, Select, message, notification } from "antd";
 import {
   CheckCircleOutlined,
   LockOutlined,

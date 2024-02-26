@@ -37,6 +37,8 @@ export const routesByRole = {
       { name: "¿Quiénes somos?", path: "/Quien" },
       { name: "Preguntas", path: "/Preguntas" },
       { name: "Mapa", path: "/Mapa" },
+      { name:"Salir", path:"/Logout"}
+
     ],
     "2": [
       { name: "Inicio", path: "/" },
@@ -58,6 +60,7 @@ export const routesByRole = {
           { name: "Descarga de reporte", path: "/modal" },
         ],
       },
+
       {
         name: "Examen",
         path: "/Examen",
@@ -70,6 +73,8 @@ export const routesByRole = {
       { name: "¿Quiénes somos?", path: "/Quien" },
       { name: "Preguntas", path: "/Preguntas" },
       { name: "Mapa", path: "/Mapa" },
+      { name:"Salir", path:"/Logout"}
+
     ],
     "3": [
       { name: "Inicio", path: "/" },
@@ -83,7 +88,7 @@ export const routesByRole = {
         ],
       },
       { name: "¿Quiénes somos?", path: "/Quien" },
-      { name:"salir", path:"/Logout"}
+      { name:"Salir", path:"/Logout"}
     ],
   };
   
